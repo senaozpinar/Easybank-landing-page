@@ -1,0 +1,33 @@
+//VARIABLES
+//Colors
+$color-primary: #2d314d;
+$color-secondary: #31d35c;
+$color-tertiary: #2bb7da;
+
+$color-grey: #9698a6;
+$color-grey-light-1: #f3f4f6;
+$color-grey-light-2: #fafafa;
+$color-white: #ffffff;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; //1rem=10px
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  color: $color-grey;
+  line-height: 1.6;
+  font-size: 1.8rem;
+}
