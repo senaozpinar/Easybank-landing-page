@@ -3,11 +3,22 @@
 $color-primary: #2d314d;
 $color-secondary: #31d35c;
 $color-tertiary: #2bb7da;
+$color-mix: #2ec59b;
 
 $color-grey: #9698a6;
 $color-grey-light-1: #f3f4f6;
 $color-grey-light-2: #fafafa;
 $color-white: #ffffff;
+
+$container-width: 130rem;
+$container-padding-dt: 5rem;
+$container-padding-m: 3rem;
+
+$bp-largest: 75em; // 1200px
+$bp-large: 68.75em; // 1100px
+$bp-medium: 62.5em; // 1000px
+$bp-small: 56.25em; // 900px
+$bp-smallest: 43.75em; // 700px
 
 * {
   margin: 0;
@@ -23,11 +34,12 @@ $color-white: #ffffff;
 html {
   font-size: 62.5%; //1rem=10px
   box-sizing: border-box;
+  @media only screen and (max-width: $bp-small) {
+    font-size: 56.25%;
+  }
 }
 
-body {
-  font-family: "Public Sans", sans-serif;
-  color: $color-grey;
-  line-height: 1.6;
-  font-size: 1.8rem;
+::selection {
+  background-color: $color-tertiary;
+  color: $color-white;
 }
